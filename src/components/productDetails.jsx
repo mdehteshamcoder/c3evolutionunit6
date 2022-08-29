@@ -18,7 +18,7 @@ const ProductDetails = () => {
     const getData = async () => {
         try {
             
-            let response = await fetch(`http://localhost:3000/products/${productId}`);
+            let response = await fetch(`http://localhost:8080/products/${productId}`);
             let result = await response.json();
             
             return result;
